@@ -1,0 +1,219 @@
+.header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+
+    &__button {
+
+        left: 90%;
+        top: 20%;
+
+        position: absolute;
+
+        background-color: #fff;
+        border: none;
+
+        @media screen and (min-width: 768px) {
+
+            display: none;
+        }
+
+
+        &__svg {
+
+
+            @media screen and (min-width: 786px) {
+                display: none;
+            }
+        }
+
+
+    }
+
+
+
+
+    &__container {
+        display: flex;
+    }
+
+    &__logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: #000000;
+
+        &--span {
+            color: #2196F3;
+        }
+
+    }
+
+    &__pages {
+
+
+        display: none;
+
+        @media screen and (min-width: 768px) {
+
+            display: flex;
+            align-items: center;
+            margin-left: 93px;
+            margin-right: auto;
+
+
+        }
+
+        @media screen and (min-width: 1200px) {}
+
+
+        & li {
+            margin-right: 55px;
+        }
+
+    }
+
+
+
+    &__nav {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $main-texts-color;
+        position: relative;
+
+        &:hover {
+            color: $hover-color;
+            transition: 250ms;
+
+        }
+
+    }
+
+    __ &__link {
+        display: flex;
+        align-items: center;
+
+        & svg {
+            margin-right: 10px;
+        }
+
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        & svg {
+            margin-right: 10px;
+        }
+
+    }
+
+
+    &__list-contacts {
+        display: flex;
+
+        & svg {
+            margin-right: 10px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            margin-top: 5px;
+        }
+
+    }
+
+    &__email:hover,
+    &__phone:hover {
+        transition: 250ms;
+        color: $hover-color;
+    }
+
+    &__contacts {
+
+
+        display: none;
+
+        @media screen and (min-width: 768px) {
+
+
+
+            display: flex;
+            align-items: center;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+
+            color: #757575;
+
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            letter-spacing: 0.02em;
+        }
+
+        margin-left: auto;
+
+
+        @extend %flex;
+
+
+
+        & li:first-child {
+
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 50px;
+            }
+
+
+        }
+
+    }
+
+
+    &__svg {
+        fill: 757575;
+    }
+
+
+    &__contact:hover svg {
+        fill: $hover-color;
+        transition: 250ms;
+    }
+
+    .current:after {
+
+
+        content: "";
+        position: absolute;
+        top: 45.2px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #2196f3;
+        border-radius: 2px;
+
+        @media screen and (max-width:1199px) {
+            top: 50px;
+        }
+
+    }
+
+
+
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width:1200px) {}
+
+
+}

@@ -1,0 +1,294 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    &__info {
+        @extend %flex-column;
+
+        width: 231px;
+        height: 132px;
+    }
+
+
+    &__socials {
+        padding-top: 60px;
+
+
+
+
+        @media screen and (min-width:768px) {
+
+
+            margin-left: 70px;
+            padding-top: 12px;
+        }
+
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__colonslist {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+        align-items: center;
+        // margin-left: auto;
+        // margin-right: auto;
+
+        @media screen and (min-width:768px) {
+            align-items: flex-start;
+            flex-direction: row;
+        }
+
+    }
+
+    &__colonsitem {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+        @media screen and (min-width:1200px) {
+            text-align: left;
+
+        }
+
+    }
+
+    & li {
+        margin-bottom: 9px;
+    }
+
+    &__address {
+        margin-bottom: 9px;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+
+    &__address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+
+        letter-spacing: 0.03em;
+
+        color: $dark-background-text-color;
+    }
+
+    &__logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    &__logo-span {
+        color: #2196F3;
+    }
+
+
+
+    &__contacts {
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #757575;
+
+        &:hover {
+            color: $hover-color;
+            transition: 250ms;
+
+        }
+
+    }
+
+
+
+
+
+    &__social-link {
+        display: flex;
+
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        padding: 12px;
+        fill: #ffffff;
+
+        margin-right: 10px;
+
+
+        &:hover {
+            background-color: $hover-color;
+            fill: #FFFFFF;
+            transition: 250ms;
+        }
+    }
+
+
+    &__socials-item {
+
+        text-align: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {}
+
+
+
+    }
+
+
+
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $dark-background-text-color;
+
+        margin-bottom: 20px;
+    }
+
+    &__socials-list {
+        @extend %flex-space-between;
+        width: 206px;
+    }
+
+
+    &__link-item {
+
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+
+            padding-top: 60px;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding-left: 93px;
+            padding-top: 12px;
+            text-align: left;
+        }
+    }
+
+
+    &__form {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+        width: 100%;
+
+
+        @media screen and (min-width:768px) {
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+            justify-content: space-between;
+            width: 570px;
+            flex-direction: row;
+            margin-top: 00px;
+        }
+    }
+
+    &__send {
+        fill: #fff;
+        margin-left: 12px;
+    }
+
+    &__button {
+        @extend %flex-center;
+        @include button($width-btn: 200px);
+
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.80;
+        letter-spacing: 0.06em;
+        color: $dark-background-text-color;
+
+        margin-top: 20px;
+        border: none;
+
+
+
+        @media screen and (min-width:1200px) {
+            margin-top: 0px;
+        }
+
+
+    }
+
+    &__field {
+
+        height: 50px;
+        width: 350px;
+
+
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width:1200px) {
+            width: 358px;
+
+        }
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px $box-shadow);
+        border-radius: 4px;
+
+        background-color: transparent;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        padding: 15px 16px;
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+        transition: all ease 0.2s;
+
+
+
+        &:hover {
+            border-color: $hover-color;
+            transition: 250ms;
+        }
+    }
+
+
+
+
+}

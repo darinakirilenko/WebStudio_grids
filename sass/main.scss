@@ -1,0 +1,15 @@
+@import "./base/common";
+@import "./base/reset";
+@import "./utils/mixin";
+@import "./utils/placeholders";
+@import "./utils/variables";
+@import "./base/header";
+@import "./main-components/main";
+@import "./main-components/modal";
+@import "./base/menu";
+
+@import "./main-components/benefits";
+@import "./main-components/skills";
+@import "./main-components/team";
+@import "./main-components/clients";
+@import "./base/footer";
