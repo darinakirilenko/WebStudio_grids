@@ -16,21 +16,24 @@
         height: 460px;
 
         @media screen and (min-width:768px) {
-            // width: 354px;
+            width: 354px;
             height: 374px;
         }
 
         @media screen and (min-width:1200px) {
-            // width: 270px;
+            width: 270px;
             height: 260px;
         }
     }
 
     &__list {
         @extend %flex-justifycontent-center;
+        min-width: 100%;
+        max-width: 480px;
+        display: flex;
         flex-wrap: wrap;
-
-        @include grids-list(30px);
+        justify-content: center;
+        gap: 30px;
 
 
 
@@ -49,14 +52,17 @@
 
         // margin-right: auto;
         // margin-left: auto;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         @include grids-item(1, 30px);
 
         @media screen and (min-width: 768px) {
+            max-width: 354px;
             @include grids-item(2, 30px);
         }
 
         @media screen and (min-width: 1200px) {
+            max-width: 270px;
+
             @include grids-item(4, 30px);
         }
 

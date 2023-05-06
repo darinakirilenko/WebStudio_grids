@@ -234,12 +234,12 @@ __ .header__link svg {
   .main {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/img/hero-desktop@1x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero-desktop@1x-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/img/hero-desktop@2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero-desktop@2x-min.jpg);
   }
 }
 .main__title {
@@ -584,17 +584,12 @@ __ .header__link svg {
   }
 }
 .benefits__list {
+  min-width: 100%;
+  max-width: 480px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-}
-.benefits__list li {
-  margin-right: auto;
-  margin-left: auto;
-}
-.benefits__list li:last-child {
-  margin-right: auto;
 }
 .benefits__title {
   text-align: center;
@@ -684,12 +679,14 @@ __ .header__link svg {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  min-width: 100%;
+  max-width: 480px;
 }
 .skills__list li li:last-child {
   margin-right: none;
 }
 .skills__img {
-  width: 100%;
+  width: 370px;
   height: 294px;
 }
 .skills__title {
@@ -702,7 +699,6 @@ __ .header__link svg {
   margin-bottom: 50px;
 }
 .skills__item {
-  flex-basis: calc((100% - 90px) / 3);
   text-transform: uppercase;
   position: relative;
   font-size: 14px;
@@ -714,7 +710,7 @@ __ .header__link svg {
 .skills__item::before {
   content: "Десктопні додатки";
   position: absolute;
-  width: 100%;
+  width: 370px;
   height: 70px;
   bottom: 4px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -743,16 +739,19 @@ __ .header__link svg {
 }
 @media screen and (min-width: 768px) {
   .team__img {
+    width: 354px;
     height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__img {
+    width: 270px;
     height: 260px;
   }
 }
 .team__list {
-  flex-wrap: wrap;
+  min-width: 100%;
+  max-width: 480px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -762,16 +761,17 @@ __ .header__link svg {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 1px 3px 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
   flex-basis: calc((100% - 30px) / 1);
 }
 @media screen and (min-width: 768px) {
   .team__item {
+    max-width: 354px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
+    max-width: 270px;
     flex-basis: calc((100% - 120px) / 4);
   }
 }
@@ -849,22 +849,22 @@ __ .header__link svg {
 }
 
 .clients__list {
+  min-width: 100%;
+  max-width: 480px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .clients__list {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding-bottom: 55px;
   }
 }
 
 .clients__item {
+  max-width: 170px;
   justify-content: center;
   box-sizing: border-box;
   border: 1px solid #AFB1B8;
@@ -872,8 +872,6 @@ __ .header__link svg {
   width: 210px;
   height: 92px;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
   flex-basis: calc((100% - 60px) / 2);
 }
 @media screen and (min-width: 768px) {
@@ -888,9 +886,6 @@ __ .header__link svg {
     height: 90px;
     width: 170px;
     flex-basis: calc((100% - 180px) / 6);
-  }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 .clients__item:hover {

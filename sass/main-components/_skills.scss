@@ -10,6 +10,8 @@
 
     &__list {
         @include grids-list(30px);
+        min-width: 100%;
+        max-width: 480px;
 
         & li {
 
@@ -24,7 +26,7 @@
 
 
     &__img {
-        width: 100%;
+        width: 370px;
         height: 294px;
 
     }
@@ -43,7 +45,7 @@
 
     &__item {
 
-        @include grids-item(3, 30px);
+        // @include grids-item(3, 30px);
 
         text-transform: uppercase;
         position: relative;
@@ -61,7 +63,7 @@
             @extend %flex-center;
             position: absolute;
 
-            width: 100%;
+            width: 370px;
             height: 70px;
 
             bottom: 4px;

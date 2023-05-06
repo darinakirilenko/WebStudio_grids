@@ -18,25 +18,33 @@
 
 .clients__list {
 
+    min-width: 100%;
+    max-width: 480px;
+
     @include grids-list(30px);
 
 
 
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
 
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 
 
     @media screen and (min-width:768px) {}
 
     @media screen and (min-width:1200px) {
-        flex-wrap: nowrap;
+        // flex-wrap: nowrap;
+        flex-wrap: wrap;
         padding-bottom: 55px;
     }
 }
 
 .clients__item {
+
+    max-width: 170px;
+
+
     @extend %flex;
     justify-content: center;
     box-sizing: border-box;
@@ -51,8 +59,8 @@
 
     margin-bottom: 30px;
 
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 
     @include grids-item(2, 30px);
 
@@ -69,9 +77,9 @@
 
         @include grids-item(6, 30px);
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
 
     }
 
